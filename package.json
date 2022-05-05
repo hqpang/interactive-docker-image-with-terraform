@@ -1,0 +1,26 @@
+{
+  "name": "htx-interactive-docker-image-with-terraform",
+  "version": "1.0.0",
+  "description": "A tech assessment for HTX by Michelle Pang",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "terraform",
+    "docker"
+  ],
+  "author": "Michelle Pang",
+  "bugs": {
+    "url": " "
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.0"
+  }
+}

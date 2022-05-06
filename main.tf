@@ -12,7 +12,7 @@ provider "docker" {
 }
 
 
-resource "docker_container" "hello_world_app" {
+resource "docker_container" "htx_docker_terraform_app" {
   image = "htx_docker_app:latest"
   name  = "htx_docker_terraform_app"
   restart = "no"

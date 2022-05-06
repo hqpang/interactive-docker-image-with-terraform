@@ -1,7 +1,7 @@
 {
-  "name": "htx-interactive-docker-image-with-terraform",
+  "name": "interactive-docker-image-with-terraform",
   "version": "1.0.0",
-  "description": "A tech assessment for HTX by Michelle Pang",
+  "description": "A tech assessment by Michelle",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "terraform",
     "docker"
   ],
-  "author": "Michelle Pang",
+  "author": "Michelle",
   "bugs": {
     "url": " https://github.com/hqpang/interactive-docker-image-with-terraform.git "
   },

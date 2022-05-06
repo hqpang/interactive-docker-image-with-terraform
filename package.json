@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/hqpang/interactive-docker-image-with-terraform.git"
   },
   "keywords": [
     "terraform",
@@ -16,9 +16,9 @@
   ],
   "author": "Michelle Pang",
   "bugs": {
-    "url": " "
+    "url": " https://github.com/hqpang/interactive-docker-image-with-terraform.git "
   },
-  "homepage": "",
+  "homepage": "https://github.com/hqpang",
   "dependencies": {
     "express": "^4.18.1",
     "socket.io": "^4.5.0"

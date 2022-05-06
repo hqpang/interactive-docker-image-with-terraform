@@ -8,7 +8,7 @@
             background-color:#00CED1;}
     
     button {
-      height: 50px;
+      height: 25px;
       width: 100px;
     }
     .introduction-container{
@@ -33,6 +33,13 @@
   </style>
   <script language="JavaScript">
     function showInput(){
+
+      var checkName = document.getElementById('fullname').value;
+      if (checkName == '') {
+        alert("Please enter your name");
+        location.reload();
+        return false;
+      }
 
       document.getElementById('displayUserInputs').style.display = 'block';
       document.getElementById('displayName').innerHTML = document.getElementById('fullname').value;

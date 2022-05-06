@@ -3,18 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Tech Assessment for HTX</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
     body { 
             background-color:#00CED1;}
+    
+    button {
+      height: 50px;
+      width: 100px;
+    }
     .introduction-container{
       background-color:lightgrey;
       margin: 20px;
       padding: 50px;
-      border: 5px solid black; 
+      border: 5px solid black;
+    }
+    .introduction-content {
+      background-color: #B0C4DE;
+      margin-top: 30px;
+      margin: 20px;
+      padding: 50px;
+    }
+
+    .displayUserInputs {
+      display: none;
+      padding: 50px;
+      margin-top: 20px;
 
     }
   </style>
+  <script language="JavaScript">
+    function showInput(){
+
+      document.getElementById('displayUserInputs').style.display = 'block';
+      document.getElementById('displayName').innerHTML = document.getElementById('fullname').value;
+      document.getElementById('displayComments').innerHTML = document.getElementById('comments').value;
+      if (document.getElementById('female').checked) {
+        document.getElementById('displayGender').innerHTML = document.getElementById('female').value;
+      }; 
+      if (document.getElementById('male').checked) {
+        document.getElementById('displayGender').innerHTML = document.getElementById('male').value;
+      };
+      if (document.getElementById('other').checked) {
+        document.getElementById('displayGender').innerHTML = document.getElementById('other').value;
+      };
+      
+    }
+  </script>
 </head>
 <body>
 
@@ -25,5 +59,37 @@
     </div>
   </div>
     
+  <div class="introduction-content">
+    <div>
+      <h3>This is an application that has been created using docker and terraform.</h3>
+    </div>
+
+    <div>
+      <h5>Please fill in the details below.</h5>
+      <form>
+        <label for="fullname">Name: </label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="comments">Comments: </label><br>
+        <input id="comments" name="comments" rows="5" cols="40"><br><br>
+        <label for="gender">Gender: </label><br>
+        <input type="radio"  id="female" name="gender" value="Female"> Female
+        <input type="radio"  id="male" name="gender" value="Male"> Male
+        <input type="radio"  id="other" name="gender" value=" Rather Not Disclose"> Rather Not Disclose
+        <br><br>
+        <button type="button" name="submit" onclick="showInput()">Submit</button>
+      </form>
+    </div>
+    <div id="displayUserInputs" class="displayUserInputs">
+      <h2>Thank you for your Time!</h2>
+      <h4>Hello <u><span id="displayName"></u></span> !</h4>
+      <br>
+      <h5>you have selected <u><span id="displayGender"></span></u> as your option.</h5>
+      <h5>For comments, you have chosen to tell me: 
+        <br><br>
+        <span id="displayComments"></span>
+      </h5>
+      
+    </div>
+  </div> 
 </body>
 </html>

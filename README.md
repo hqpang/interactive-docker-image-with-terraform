@@ -8,8 +8,8 @@
 <br><br>
 
 To test the code on a local setup:
-1. Build the application: docker build -t htx_docker_app .
-2. Run the application: docker run -p 127.0.0.1:8080:8080 htx_docker_app
+1. Build the application: ```docker build -t htx_docker_app .```
+2. Run the application: ```docker run -p 127.0.0.1:8080:8080 htx_docker_app```
 3. Go to http://localhost:8080 to try the application.
 
 <h2> Application User Guide</h2>
